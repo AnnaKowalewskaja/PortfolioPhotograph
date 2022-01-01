@@ -1,0 +1,40 @@
+@import "header.css";
+@import "/styles/main.css";
+@import "footer.css";
+
+:root {
+    --main-bg-color: #000000;
+    --main-font-color: #FFFFFF;
+  }
+
+  *{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+div{
+  margin:0;
+  padding: 0;
+}
+
+button{
+  border-radius: 0;
+}
+ul{
+  list-style-type:none;
+
+}
+
+h1,h2,h3,h4,p,span,a{
+  color:var(--main-font-color);
+}
+
+.container {
+  width: 98%;
+  max-width: 1400px;
+  margin: 0 auto;
+}

@@ -4,6 +4,8 @@
 .hero{
     background-image: url(./../assets/images/bg.jpg);
     background-attachment: fixed;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 

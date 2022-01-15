@@ -142,6 +142,8 @@
 
 .contacts {
   background-image: url(../assets/images/contacts-bg.jpg);
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .contacts__block {

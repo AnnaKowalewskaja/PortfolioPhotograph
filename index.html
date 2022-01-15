@@ -14,94 +14,291 @@
     <title>Portfolio</title>
   </head>
   <body>
+   
+    
     <header class="header">
-      <div class="container">
-        
-
-
-
+      <div class="container navbar">
         <div class="header__menu">
-            <img src="/assets/images/logo.svg" alt="logo" class="menu_logo" />
-
-
-
-
-            <div class="menu__nav">
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                      <li><a>Skills</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Video</a></li>
-                      <li><a>Price</a></li>
-                      <li><a>Contacts</a></li>
-                    </ul>
-          
-                  </nav>
-
-
-                  <div class="nav__language">
-                    <input type="button" value="en" />/
-                    <input type="button" value="ru" />
-                  </div>
-                  <!-- /.nav__language -->
+          <img src="/assets/images/logo.svg" alt="logo" class="menu_logo" />
+  
+          <div class="menu__nav">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li><a class="navigation__item" href="#skills">Skills</a></li>
+                <li>
+                  <a class="navigation__item" href="#portfolio">Portfolio</a>
+                </li>
+                <li><a class="navigation__item" href="#video">Video</a></li>
+                <li><a class="navigation__item" href="#price">Price</a></li>
+                <li><a class="navigation__item" href="#contacts">Contacts</a></li>
+              </ul>
+            </nav>
+  
+            <div class="nav__language">
+              <button class="language_active language__button">en</button>
+              <span>/</span>
+              <button class="language__button">ru</button>
             </div>
-            <!-- /.menu__nav -->
-
-
+            <!-- /.nav__language -->
+          </div>
+          <!-- /.menu__nav -->
         </div>
         <!-- /.header__menu -->
-        
-        
-        
-
-
-
-        <section class="hero">
-            <h1>Alexa Rise</h1>
-            <p>Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
-            <button>Hire me</button>
-          </section>
-
-<!-- /.container -->
+  
+        <!-- /.container -->
       </div>
     </header>
-    <main>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__block">
+          <h1 class="hero__title">Alexa Rise</h1>
+          <p class="hero__description">
+            Save sincere emotions, romantic feelings and happy moments of life
+            together with professional photographer Alexa Rise
+          </p>
+          <button class="button">Hire me</button>
+        </div>
+       
+      </section>
       <div class="container">
-        <section class="skills"><h2>Skills</h2></section>
-        <section class="portfolio">
-          <h2>Portfolio</h2>
-          <button>Winter</button>
-          <button>Spring</button>
-          <button>Summer</button>
-          <button>Autumn</button>
+        
+        <section class="skills" id="skills">
+          <div class="section__block">
+            <hr class="line-border" />
+            <h2 class="section__item">Skills</h2>
+            <hr class="line-border" />
+          </div>
+
+          <ul class="skills__list">
+            <li class="skills__item list__item">
+              <div class="skills__block">
+                <img
+                  class="skills__img"
+                  src="assets/images/skills/camera.svg"
+                  alt="skills camera"
+                />
+
+                <div class="skills__description">
+                  <p class="skills__description_title">Digital photography</p>
+                  <p class="skills__description_description">
+                    High-quality photos in the studio and on the nature
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="skills__item list__item">
+              <div class="skills__block">
+                <img
+                  class="skills__img"
+                  src="assets/images/skills/image.svg"
+                  alt="skills image"
+                />
+
+                <div class="skills__description">
+                  <p class="skills__description_title">Video shooting</p>
+                  <p class="skills__description_description">
+                    Capture your moments so that they always stay with you
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="skills__item list__item">
+              <div class="skills__block">
+                <img
+                  class="skills__img"
+                  src="assets/images/skills/mic.svg"
+                  alt="skills mic"
+                />
+
+                <div class="skills__description">
+                  <p class="skills__description_title">Retouch</p>
+                  <p class="skills__description_description">
+                    I strive to make photography surpass reality
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="skills__item list__item">
+              <div class="skills__block">
+                <img
+                  class="skills__img"
+                  src="assets/images/skills/video.svg"
+                  alt="skills video"
+                />
+
+                <div class="skills__description">
+                  <p class="skills__description_title">Audio</p>
+                  <p class="skills__description_description">
+                    Professional sounds recording for video, advertising,
+                    portfolio
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
-        <section class="video">
-          <h2>Video</h2>
-          <button><img src="assets/images/play_hover.svg" alt="play" /></button>
+        <section class="portfolio" id="portfolio">
+          <div class="section__block">
+            <hr class="line-border" />
+            <h2 class="section__item">Portfolio</h2>
+            <hr class="line-border" />
+          </div>
+
+          <div class="portfolio__menu">
+            <button class="button__menu">Winter</button>
+            <button class="button__menu">Spring</button>
+            <button class="button__menu">Summer</button>
+            <button class="button__menu active">Autumn</button>
+          </div>
+
+          <div class="portfolio__photoBlock">
+            <img
+              src="./assets/images/portfolio/portfolio-img2.jpg"
+              alt="portfolio image"
+              class="portfolio__img"
+            />
+            <img
+              src="./assets/images/portfolio/portfolio-img1.jpg"
+              alt="portfolio image"
+              class="portfolio__img"
+            />
+            <img
+              src="./assets/images/portfolio/portfolio-img3.jpg"
+              alt="portfolio image"
+              class="portfolio__img"
+            />
+            <img
+              src="./assets/images/portfolio/portfolio-img4.jpg"
+              alt="portfolio image"
+              class="portfolio__img"
+            />
+            <img
+              src="./assets/images/portfolio/portfolio-img5.jpg"
+              alt="portfolio image"
+              class="portfolio__img"
+            />
+            <img
+              src="./assets/images/portfolio/portfolio-img6.jpg"
+              alt="portfolio image"
+              class="portfolio__img"
+            />
+          </div>
         </section>
-        <section class="price">
-          <h2>Price</h2>
-          <button>Order shooting</button>
-          <button>Order shooting</button>
-          <button>Order shooting</button>
+        <section class="video" id="video">
+          <div class="section__block">
+            <hr class="line-border" />
+            <h2 class="section__item">Video</h2>
+            <hr class="line-border" />
+          </div>
+
+          <div class="video__player">
+            <img
+              src="./assets/images/video-player.jpg"
+              alt="video player"
+              class="video__screen"
+            />
+            <button class="video__control">
+              <img
+                class="control__img"
+                src="assets/images/play_hover.svg"
+                alt="play"
+              />
+            </button>
+          </div>
         </section>
-        <section class="contacts">
-          <h2>Contact me</h2>
-          <input type="email" placeholder="E-mail" />
-          <input type="tel" placeholder="Phone" />
-          <textarea placeholder="Message"></textarea>
-          <button>Send message</button>
+        <section class="price" id="price">
+          <div class="section__block ">
+            <hr class="line-border" />
+            <h2 class="section__item">Price</h2>
+            <hr class="line-border" />
+          </div>
+
+          <div class="price__block">
+            <div class="price__item">
+              <h3 class="price__name">Standart</h3>
+              <p class="price__price">500 $</p>
+              <div class="price__description">
+                <ul class="price__list">
+                  <li class="price__list_item">One location</li>
+                  <li class="price__list_item">120 photos in color</li>
+                  <li class="price__list_item">12 photos in retouch</li>
+                  <li class="price__list_item">Readiness 2-3 weeks</li>
+                  <li class="price__list_item">Make up, visage</li>
+                </ul>
+              </div>
+              <button class="price__order button">Order shooting</button>
+            </div>
+            <div class="price__item">
+              <h3 class="price__name">Premium</h3>
+              <p class="price__price">700 $</p>
+              <div class="price__description">
+                <ul class="price__list">
+                  <li class="price__list_item">One or two locations</li>
+                  <li class="price__list_item">200 photos in color</li>
+                  <li class="price__list_item">20 photos in retouch</li>
+                  <li class="price__list_item">Readiness 1-2 weeks</li>
+                  <li class="price__list_item">Make up, visage</li>
+                </ul>
+              </div>
+              <button class="price__order button">Order shooting</button>
+            </div>
+            <div class="price__item">
+              <h3 class="price__name">Gold</h3>
+              <p class="price__price">1000 $</p>
+              <div class="price__description">
+                <ul class="price__list">
+                  <li class="price__list_item">Three locations or more</li>
+                  <li class="price__list_item">300 photos in color</li>
+                  <li class="price__list_item">50 photos in retouch</li>
+                  <li class="price__list_item">Readiness 1 week</li>
+                  <li class="price__list_item">Make up, visage, hairstyle</li>
+                </ul>
+              </div>
+              <button class="price__order button">Order shooting</button>
+            </div>
+          </div>
         </section>
       </div>
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__block">
+            <h2 class="contacts__name">Contact me</h2>
+            <div class="contacts__form">
+              <input type="email" placeholder="E-mail" class="contacts__email contacts__settings" />
+              <input type="tel" placeholder="Phone" class="contacts__phone contacts__settings" />
+              <textarea placeholder="Message" class="contacts__message contacts__settings"></textarea>
+              <button class=" button__menu contacts__send active button" >Send message</button>
+            </div>
+            <!-- /.contacts__form -->
+          </div>
+          <!-- /.contacts__block -->
+        </div>
+        <!-- /.container -->
+      </section>
     </main>
-    <footer>
-      <div class="container">
-        <ul>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-        </ul>
+    <footer class="footer">
+      <div class="container footer__container">
+
+        <div class="footer__social footer__container">
+
+          <div class="footer__git">
+<p class="git">©</p>
+<p class="git">2022</p>
+<a href="https://github.com/AnnaKowalewskaja" class="git__link footer__link">github</a>
+          </div>
+          <!-- /.footer__git -->
+
+
+          <a href="https://rs.school/js-stage0/" class="footer__link">Rolling Scopes School</a>
+          <ul class="social__list">
+            <li><a><img src="assets/images/social/inst.svg" alt="instagram">  </a></li>
+            <li><a><img src="assets/images/social/fb.svg" alt="facebook">  </a></li>
+            <li><a><img src="assets/images/social/tw.svg" alt="twitter">  </a></li>
+            <li><a><img src="assets/images/social/pinterest.svg" alt="pinterest">  </a></li>
+          </ul>
+        </div>
+        <!-- /.footer__social -->
+        
       </div>
     </footer>
   </body>

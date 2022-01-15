@@ -1,0 +1,38 @@
+.footer{
+    height: 15rem;
+
+}
+
+.footer__social,
+.footer__git,
+.social__list{
+    display: flex;
+
+}
+
+.footer__social{
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.footer__container{
+    height: 100%;
+}
+
+.footer__git{
+    width: 169px;
+    justify-content: space-between;
+}
+
+
+.social__list{
+    width: 188px;
+    justify-content: space-between;
+}
+
+.footer__link:hover{
+    color: var(--active-color);
+    cursor: pointer;
+    transition: var( --main-animation);
+}

@@ -1,40 +1,179 @@
 @import "header.css";
-@import "/styles/main.css";
+@import "main.css";
 @import "footer.css";
 
-:root {
-    --main-bg-color: #000000;
-    --main-font-color: #FFFFFF;
-  }
-
-  *{
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-  }
-
-body{
-    background-color: var(--main-bg-color);
+@font-face {
+  font-family: "Inter400";
+  src: url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
-div{
-  margin:0;
+@font-face {
+  font-family: "Inter700";
+  src: url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Merriweather700";
+  src: url("../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --main-bg-color: #000000;
+  --main-font-color: #ffffff;
+  --active-color: #bdae82;
+  --main-font: "Inter400";
+  --main-font_bold: "Inter700";
+  --title-font: "Merriweather700";
+
+  --main-animation:all 0.3s ease-in;
+}
+
+* {
+  scroll-behavior: smooth;
+  
+  line-height: 2;
+}
+
+html {
+  font-size: 10px;
+}
+h1 {
+  font-size: 6rem;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+div {
+  margin: 0;
   padding: 0;
 }
 
-button{
+button {
   border-radius: 0;
 }
-ul{
-  list-style-type:none;
-
+ul {
+  list-style-type: none;
 }
 
-h1,h2,h3,h4,p,span,a{
-  color:var(--main-font-color);
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a {
+  color: var(--main-font-color);
+  margin: 0;
 }
+
+a,
+p,
+span,
+input,
+button,
+textarea
+ {
+  font-family: var(--main-font);
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 4rem;
+  color: var(--active-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title-font);
+}
+
+
 
 .container {
   width: 98%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.title {
+  color: var(--active-color);
+  line-height: 80rem;
+  font-size: 4rem;
+}
+
+.button {
+  background-color: var(--active-color);
+  width: 22rem;
+  height: 5.5rem;
+  border-width: 0;
+  border-style: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: var(--main-animation);
+  color: var(--active-color);
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(3px);
+  border: 2px var(--active-color) solid;
+}
+
+.button__menu {
+  color: var(--active-color);
+  width: 22rem;
+  height: 5.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  
+  border: 2px var(--active-color) solid;
+}
+
+.button__menu.active {
+  background-color: var(--active-color);
+  color:var(--main-bg-color);
+}
+
+.button__menu:hover{
+  cursor: pointer;
+  transition: var(--main-animation);
+  
+
+}
+
+
+.line-border {
+  border: 0.05rem solid var(--active-color);
+  width: 100%;
+  
+}
+
+.section__block{
+  display: flex;
+  align-items: center;
+justify-content: center;
+width: 70rem;
+height: 80px;
+margin: 0 auto;
+
+}
+
+.section__item{
+  margin: auto 20px;
 }
